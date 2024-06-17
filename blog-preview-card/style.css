@@ -1,0 +1,95 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    --font: "Figtree",
+        sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1.6rem;
+    background-color: var(--Yellow);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.card {
+    background-color: var(--White);
+    max-width: 35rem;
+    width: 85%;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    border: 1px solid var(--Black);
+    box-shadow: .8rem .8rem var(--Black);
+}
+
+
+.card .wrapper {
+    background-image: url(./assets/images/illustration-article.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.card .tag {
+    display: inline-block;
+    background-color: var(--Yellow);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.card .date-publicated {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card .title {
+    font-weight: 800;
+}
+.card .description {
+    margin: 2rem 0;
+    color: var(--Grey);
+}
+
+.card .footer-avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-avatar img {
+    width: 4rem;
+}
+.footer-avatar span {
+    font-weight: 800;
+}
